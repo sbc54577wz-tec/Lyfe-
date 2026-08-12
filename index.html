@@ -1,16 +1,21 @@
+
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 
-  <title>Lyfe 😎</title>
+  <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lyfe 😎</title>
 
   <style>
 
     body {
+
+      margin: 0;
 
       font-family: Arial, sans-serif;
 
@@ -18,58 +23,100 @@
 
       background: #f2f2f2;
 
-      padding: 40px 20px;
+      color: #111;
+
+    }
+
+    .container {
+
+      padding: 80px 20px;
 
     }
 
     h1 {
 
-      font-size: 50px;
+      font-size: 60px;
 
-      margin-bottom: 10px;
+      margin-bottom: 15px;
 
     }
 
     p {
 
-      font-size: 22px;
+      font-size: 24px;
+
+      margin-bottom: 35px;
 
     }
 
     button {
 
-      padding: 15px 25px;
+      padding: 15px 30px;
 
-      font-size: 18px;
+      font-size: 20px;
 
       border: none;
 
       border-radius: 10px;
+
       background: black;
 
-    color: white;
+      color: white;
 
-  }
+      cursor: pointer;
 
-</style>
+    }
+
+    button:hover {
+
+      opacity: 0.8;
+
+    }
+
+    #message {
+
+      margin-top: 30px;
+
+      font-size: 22px;
+
+      font-weight: bold;
+
+    }
+
+  </style>
 
 </head>
 
 <body>
 
-  <h1>Lyfe 😎</h1>
+  <div class="container">
 
-  <p>Welcome to Lyfe123!</p>
+    <h1>Lyfe 😎</h1>
 
-  <button onclick="window.location.href='https://sbc54577wz-tec.github.io/Lyfe-/
+    <p>Welcome to Lyfe123! 🚀</p>
 
-  Let's Go 🚀
+    <button onclick="showMessage()">
 
-</button>
+      Let's Go 🚀
+
+    </button>
+
+    <div id="message"></div>
+
+  </div>
+
+  <script>
+
+    function showMessage() {
+
+      document.getElementById("message").textContent =
+
+        "Welcome! You're ready to go! 🎉";
+
+    }
+
+  </script>
 
 </body>
 
 </html>
-
-
-
